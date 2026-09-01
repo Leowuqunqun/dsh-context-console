@@ -1,0 +1,29 @@
+{
+  "name": "@local/context-console",
+  "description": "Context Console view: session context composition dashboard + tool-result trimmer as a conversation view tab (peer of Chat/Trajectory).",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "license": "MIT"
+}
